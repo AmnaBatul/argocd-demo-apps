@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ingress-controller
+  namespace: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ingress
+  template:
+    metadata:
+      labels:
+        app: ingress
+    spec:
+      containers:
+      - name: ingress
+        image: quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.47.0
+        ports:
+        - containerPort: 80

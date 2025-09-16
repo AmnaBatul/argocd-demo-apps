@@ -1,0 +1,16 @@
+resources:
+  - base/namespaces.yaml
+  - base/ingress-controller.yaml
+  - base/monitoring/prometheus.yaml
+  - base/monitoring/grafana.yaml
+  - base/logging/fluentd.yaml
+  - base/logging/elasticsearch.yaml
+  - apps/frontend/deployment.yaml
+  - apps/frontend/service.yaml
+  - apps/frontend/hpa.yaml
+  - apps/backend/deployment.yaml
+  - apps/backend/service.yaml
+  - apps/backend/configmap.yaml
+  - apps/database/statefulset.yaml
+  - apps/database/service.yaml
+  - apps/database/pvc.yaml
