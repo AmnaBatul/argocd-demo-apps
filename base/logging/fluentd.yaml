@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: fluentd
-        image: fluent/fluentd:v1.17.0
+        image: fluent/fluentd:latest
